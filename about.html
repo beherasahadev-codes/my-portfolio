@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Sahadev Behera, a Computer Science student and aspiring software developer.">
     <title>About | Sahadev Behera</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Primary navigation">
             <a href="index.html" class="logo">&lt;Sahadev /&gt;</a>
-            <ul class="nav-links">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul class="nav-links" id="primary-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="index.html#skills">Skills</a></li>
@@ -22,6 +27,7 @@
         </nav>
     </header>
 
+    <main id="main-content">
     <section class="about-hero">
         <div class="about-container">
             <h1>About <span class="highlight">Me</span></h1>
@@ -44,6 +50,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <footer>
         <p>&copy; <span id="year"></span> Sahadev Behera. Built with HTML, CSS, & JS.</p>
